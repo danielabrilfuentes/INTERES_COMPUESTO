@@ -1,9 +1,14 @@
+#input
 
-def calcular_meses_duplicacion(capital):
-    meses = 0
-    while capital < 2 * capital_inicial:
-        meses += 1
-        capital *= 1.05
-    print("El capital se duplica en", meses, "meses.")
-capital_inicial = float(input("Ingrese el capital inicial: "))
-calcular_meses_duplicacion(capital_inicial)
+C = float(input("porfavor ingrese el dinero deseado : "))
+
+# variables
+n = 0
+d = 2*C
+
+#procesing
+while(C <= d):
+    C = 1.05 * C
+    n = n + 1
+print("el numero de meses totales fueron : ",n)
+print("el dinero final fue de : ",C)
